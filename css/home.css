@@ -1,0 +1,118 @@
+/* home page css */
+* {
+  box-sizing: border-box;
+}
+header {
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background: var(--color-white);
+  display: flex;
+  width: 98.95%;
+  margin-left: 7px;
+}
+.headerContainer {
+  width: 100%;
+  background-color: var(--color-white);
+}
+.menubar li,
+.menubar li a {
+  color: var(--color-dark);
+  text-decoration: none;
+  font: var(--text-16);
+}
+.narRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font: var(--text-16);
+  font-stretch: 100%;
+  column-gap: 40px;
+}
+.list-item {
+  column-gap: 30px;
+}
+.bannerContainer {
+  padding-top: 102px;
+}
+.bannerContainer img {
+  width: 100%;
+}
+.facts {
+  padding-block: 12rem 10rem;
+}
+.content {
+  border: 1px solid #dfdfdf;
+  height: 100%;
+  padding: 1rem;
+  font: var(--text-14);
+}
+.content h2 {
+  font: var(--text-24);
+  color: var(--color-prime);
+  font-weight: 600;
+}
+.campusContainer {
+  background-color: var(--color-dark);
+  min-height: 500px;
+}
+.life-at-botom ul {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.videonText {
+  display: grid;
+  position: relative;
+}
+.videonText > * {
+  grid-area: 1/1;
+}
+.videoContainer {
+  opacity: 1;
+  position: relative;
+}
+.life-at-botom {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  opacity: 1;
+  padding-bottom: 3rem;
+}
+.life-at-botom li {
+  color: var(--color-white);
+}
+.instuteProgramme .content {
+  border: 0;
+  justify-content: center;
+}
+.suvContainer {
+  padding-top: 12rem;
+  padding-block: 12rem 0 9rem;
+}
+.reserchLab > * {
+  grid-area: 1/1;
+}
+.reserchLab img {
+  width: 100%;
+}
+.researchPub {
+  --top: 8.8rem;
+  margin-top: calc(var(--top) * -1);
+  max-width: 550px;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  z-index: 1;
+}
+.researchPub .container {
+  padding: 4rem;
+}
+.researchPub li {
+  border-bottom: 1px solid var(--color-seven-0);
+  padding-block: 2rem 2rem;
+}
+
+/* end of home page css */
