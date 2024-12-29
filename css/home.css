@@ -114,5 +114,14 @@ header {
   border-bottom: 1px solid var(--color-seven-0);
   padding-block: 2rem 2rem;
 }
-
+.test {
+  padding: 30px 170px 0;
+}
+.test img {
+  width: 150px;
+}
+.test a {
+  display: block;
+  text-align: center;
+}
 /* end of home page css */
