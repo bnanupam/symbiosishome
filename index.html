@@ -1159,7 +1159,7 @@
     </div>
 
     <!-- new container start -->
-    <div class="containerText">
+    <div class="containerText container-fluid">
       <div class="row justify-content-center">
         <div class="col-4">
           <div class="card">
@@ -1218,24 +1218,53 @@
       <h2 class="text-center">SIU <span class="text-black">Social</span></h2>
       <div class="object-fit-none">
         <ul
-          class="d-flex justify-content-center column-gap-3 text-decoration-underline">
-          <li><a class="navbar-brand" href="#">SIU India</a></li>
-          <li><a class="navbar-brand" href="#">SIU Dubai</a></li>
+          class="d-flex nav-tabs justify-content-center column-gap-3 text-decoration-underline">
+          <li>
+            <a
+              class="navbar-brand"
+              href="#"
+              data-bs-target="#suiInida"
+              aria-selected="true"
+              >SIU India</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar-brand"
+              href="#"
+              data-bs-target="#suiDubai"
+              aria-selected="false"
+              >SIU Dubai</a
+            >
+          </li>
         </ul>
       </div>
     </div>
     <!-- siu social end -->
     <!-- 2nd last div start -->
-    <div class="col-lg-4 col-sm-6">
-      <div class="social-thumb d-flex gap-1">
-        <div>
-          <img src="./images/lastImg1.png" alt="" width="445" height="300" />
+    <div class="tab-content suiContent container-fluid">
+      <div id="suiInida" class="tab-pane fade show active">
+        <div class="col-12">
+          <div class="social-thumb d-flex gap-1">
+            <img src="./images/lastImg1.png" alt="" />
+            <img src="./images/lastImg2.png" alt="" />
+            <img src="./images/lastImg3.webp" alt="" />
+          </div>
         </div>
-        <div>
-          <img src="./images/lastImg2.png" alt="" width="445" height="300" />
-        </div>
-        <div>
-          <img src="./images/lastImg3.webp" alt="" width="445" height="300" />
+      </div>
+      <div id="suiDubai" class="tab-pane fade">
+        <div class="col-12">
+          <div class="social-thumb d-flex gap-1">
+            <div>
+              <img src="./images/lastImg3.png" alt="" />
+            </div>
+            <div>
+              <img src="./images/lastImg2.png" alt="" />
+            </div>
+            <div>
+              <img src="./images/lastImg1.webp" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1361,14 +1390,20 @@
             items: 1.4
           },
           768: {
-            items: 2.5,
+            items: 3.5,
             margin: 15
           },
           1400: {
-            items: 6.5,
+            items: 3.5,
             margin: 30
           }
         }
+      });
+
+      $(".nav-tabs li a").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+        $(".tab-content > .tab-pane.active").jScrollPane();
       });
     </script>
   </body>
