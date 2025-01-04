@@ -125,7 +125,17 @@ header {
   display: block;
   text-align: center;
 }
-a {
+a,
+.nav-link {
   color: var(--color-prime);
+  font-weight: 700;
+}
+a:hover,
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-prime);
+}
+.nav-link.active {
+  text-decoration: underline;
 }
 /* end of home page css */
