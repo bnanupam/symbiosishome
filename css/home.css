@@ -114,17 +114,18 @@ header {
   border-bottom: 1px solid var(--color-seven-0);
   padding-block: 2rem 2rem;
 }
-.test {
+.eduInitiative {
   padding: 30px 170px 0;
+  text-align: center;
 }
-.test img {
+.eduInitiative .row .col-12 > img {
   width: 150px;
 }
-.test a {
+.eduInitiative a {
   display: block;
   text-align: center;
 }
 .suiContent img {
-  width: 100%;
+  width: 33%;
 }
 /* end of home page css */
