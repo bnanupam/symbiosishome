@@ -85,7 +85,7 @@ header {
 .life-at-botom li {
   color: var(--color-white);
 }
-.instuteProgramme .content {
+.instituteProgramme .content {
   border: 0;
   justify-content: center;
 }
@@ -137,5 +137,8 @@ a:hover,
 }
 .nav-link.active {
   text-decoration: underline;
+}
+.section-t-space {
+  padding-top: 6.5rem;
 }
 /* end of home page css */
