@@ -125,7 +125,7 @@ header {
   display: block;
   text-align: center;
 }
-.suiContent img {
-  width: 33%;
+a {
+  color: var(--color-prime);
 }
 /* end of home page css */
