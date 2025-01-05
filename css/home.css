@@ -55,6 +55,7 @@ header {
 .campusContainer {
   background-color: var(--color-dark);
   min-height: 500px;
+  padding-block: 10rem 0;
 }
 .life-at-botom ul {
   display: flex;
@@ -140,5 +141,25 @@ a:hover,
 }
 .section-t-space {
   padding-top: 6.5rem;
+}
+.picture-card .card-content {
+  border: 0;
+  padding: 2rem 2rem 2.5rem;
+  background-color: var(--color-white);
+}
+.picture-card .card-content a {
+  color: var(--color-white);
+}
+.picture-card .card-content p a {
+  color: var(--color-dark);
+  font-size: var(--text-14);
+  font-weight: 400;
+}
+
+.campusContainer .owl-nav button:is(.owl-prev,.owl-next) {
+  border-color: var(--color-white);
+}
+.newFaces .nav-link {
+  padding: 0;
 }
 /* end of home page css */
