@@ -172,19 +172,36 @@ a:hover,
   font-weight: 400;
 }
 
-.campusContainer .owl-carousel .owl-nav button:is(.owl-prev,.owl-next) {
+.campusContainer .owl-carousel .owl-nav button:is(.owl-prev, .owl-next) {
   border: 1px solid var(--color-white);
   color: var(--color-prime);
   background: var(--color-white);
 }
-.campusContainer .owl-carousel .owl-nav button:is(.owl-prev,.owl-next):has(img) {
+.campusContainer
+  .owl-carousel
+  .owl-nav
+  button:is(.owl-prev, .owl-next):has(img) {
   background-image: none;
 }
-.campusContainer .owl-carousel .owl-nav button:is(.owl-prev,.owl-next):hover {
+.campusContainer .owl-carousel .owl-nav button:is(.owl-prev, .owl-next):hover {
   border-color: var(--color-prime);
   background: var(--color-prime);
 }
 .newFaces .nav-link {
   padding: 0;
 }
+footer {
+  font-size: 14px;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  padding: 4rem;
+}
+footer li,
+footer a,
+footer h4,
+footer p {
+  font-size: 14px;
+  color: var(--color-white);
+}
+
 /* end of home page css */
